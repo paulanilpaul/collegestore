@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body%}
+<br>
+<body style="background-image:url('/static/g.jpg')">
+<div class="container">
+    <div class="row">
+        {% for i in s %}
+        <div class="col-md-3">
+            <div class="card">
+    <div class="card-body">
+    <h5 class="card-title">{{i.name}}</h5>
+        <h5 class="card-title">{{i.date}}</h5>
+        <h5 class="card-title">{{i.age}}</h5>
+        <h5 class="card-title">{{i.gender}}</h5>
+        <h5 class="card-title">{{i.phone}}</h5>
+        <h5 class="card-title">{{i.email}}</h5>
+        <h5 class="card-text">{{i.address}}</h5>
+        <h5 class="card-title">{{i.department}}</h5>
+        <h5 class="card-title">{{i.courses}}</h5>
+        <h5 class="card-title">{{i.purpose}}</h5>
+        <h5 class="card-title">{{i.materials}}</h5>
+  </div>
+</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
